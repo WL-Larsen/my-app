@@ -8,10 +8,11 @@ export default {
     extend: {
       colors: {
         'fy': '#CBF281',
-        'mv': '#4731D3'
+        'mv': '#4731D3',
+        'btn': '#3730A3'
       },
       fontFamily: {
-        'ınt': 'Inter'
+        'int': 'Inter'
       }
     },
   },
