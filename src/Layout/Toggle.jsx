@@ -11,6 +11,7 @@ function Toggle() {
       >
         <div className="thumb"></div>
       </button>
+      
     </div>
   );
 }
