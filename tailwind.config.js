@@ -10,7 +10,9 @@ export default {
       colors: {
         'fy': '#CBF281',
         'mv': '#4731D3',
-        'btn': '#3730A3'
+        'btn': '#3730A3',
+        'darkMv': "#171043",
+        'darkFy': "#1A210B",
       },
       fontFamily: {
         'int': 'Inter'
