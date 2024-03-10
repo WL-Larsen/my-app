@@ -6,10 +6,21 @@ import './toggle.css';
 function DarkMode() {
   const [toggled, setToggled] = useState(false);
   const element = document.documentElement
+  const darkQuery = window.matchMedia("(prefers-color-scheme: dark)")
 
-  function onWindowMatch(){
 
+// tekrar bakılacak çalışmıyor
+  function onWindowMatch() {
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) && darkQuery.matches)
+    ) {
+      element.classList.add("dark");
+    } else {
+      element.classList.remove("dark");
+    }
   }
+  onWindowMatch();
 
   useEffect(() => {
     switch (toggled) {

@@ -12,14 +12,14 @@ function HeroContent() {
         <p className='text-white text-int text-2xl font-normal leading-7 tracking-normal text-left w-[528.88px] h-[58px]'>...who likes to craft solid and scalable frontend products with great user experiences.</p>
 
         <div className=' flex w-[278px] h-[52px] gap-[12px] '>
-        <button className=' grid border-1 border-solid border-btn bg-white w-[127px] h-[52px] py-3 pr-5 pl-3 rounded-md gap-[10px] dark:bg-[#252128] border border-white'>
+        <button className=' grid border-1 border-solid bg-white w-[127px] h-[52px] py-3 pr-5 pl-3 rounded-md gap-[10px] dark:bg-[#252128] border border-white'>
           <div className='flex gap-[10px] '>
             <IoLogoGithub className=' text-btn  place-content-center w-[26px] h-[26.26px] dark:text-white'/>
             <p className='text-btn font-int text-lg leading-7 font-medium text-left tracking-normal  h-[26.26px] dark:text-white'>Github</p>
           </div>
         </button>
 
-        <button className=' grid border-1 border-solid border-btn bg-white w-[127px] h-[52px] py-3 pr-5 pl-3 rounded-md gap-[10px] dark:bg-[#252128] border border-white'>
+        <button className=' grid border-1 border-solid bg-white w-[127px] h-[52px] py-3 pr-5 pl-3 rounded-md gap-[10px] dark:bg-[#252128] border border-white'>
           <div className='flex gap-[10px]'>
             <FaLinkedinIn  className=' text-btn  place-content-center w-[26px] h-[26.26px] dark:text-white '/>
             <p className='text-btn font-int text-lg leading-7 font-medium text-left tracking-normal  h-[26.26px] dark:text-white'>Linkedin</p>
