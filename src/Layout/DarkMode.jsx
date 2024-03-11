@@ -48,7 +48,7 @@ function DarkMode() {
         onClick={handleClick}
       >
         <div className="thumb"></div>
-        <div className="thumb2 bg-[#8F88FF] dark:bg-[#3A3A3A]"></div>
+        <div className="thumb2 bg-[#3A3A3A] opacity-0 dark:opacity-100 duration-500"></div>
       </button>
         <p className='text-mv font-int text-[15px] font-bold dark:text-white'>
         {toggled ? "DARK MODE" : "LIGT MODE"}
