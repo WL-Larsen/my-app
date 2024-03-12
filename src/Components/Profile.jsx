@@ -4,8 +4,8 @@ function Profile() {
   return (
     <section className='flex bg-mv dark:bg-darkMv py-3 md:py-6 lg:py-16 justify-center '>
         <div className='flex-col space-y-6 md:space-y-10 lg:space-y-12'>
-            <h1 className='flex text-fy font-bold md:text-4xl md:leading-10 lg:text-5xl lg:leading-[58px] '>Profile</h1>
-            <div className='flex flex-col md:flex-row lg:flex-row space-y-4 md:space-y-0  md:space-x-4 lg:space-x-6'>
+            <h1 className='flex text-fy font-bold text-xl md:text-4xl md:leading-10 lg:text-5xl lg:leading-[58px] '>Profile</h1>
+            <div className='flex flex-col md:flex-row lg:flex-row space-y-2 md:space-y-0  md:space-x-4 lg:space-x-6'>
                 <div className='gap-10 md:gap-16 lg:gap-28 space-y-4 lg:space-y-8 '>
                     <h3 className='text-white font-medium text-xs md:text-2xl lg:text-3xl'>Basic Information</h3>
                     <div className='flex gap-2'>

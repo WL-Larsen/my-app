@@ -13,6 +13,7 @@ export default {
         'btn': '#3730A3',
         'darkMv': "#171043",
         'darkFy': "#1A210B",
+        "Pbtn" : "#8173DA"
       },
       fontFamily: {
         'int': 'Inter'
