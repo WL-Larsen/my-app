@@ -16,7 +16,7 @@ function Skils() {
 
           <ul className='flex gap-1 md:gap-3 lg:gap-4'>
             <img className=' drop-shadow-lg w-[40px] md:w-[80px] lg:w-[120px] h-[40px] md:h-[80px] lg:h-[120px] rounded-md' src="public/assets/react.jpg" />
-            <a className="flex font-int text-[#777777]  font-medium items-center dark:text-white lg:text-2xl " href="/">REACT</a>
+            <a className="flex font-int text-[#777777]  font-medium items-center dark:text-white lg:text-2xl " href="/">REACT dsdsds</a>
           </ul>
 
           <ul className='flex gap-1 md:gap-3 lg:gap-4'>
