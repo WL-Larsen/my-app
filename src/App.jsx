@@ -13,7 +13,7 @@ function App() {
   return (
     <>
     <Hero />
-    <Hero2 />
+    {/* <Hero2 /> */}
     <Skils/>
     <Profile/>
     <Project/>

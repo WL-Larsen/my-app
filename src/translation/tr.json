@@ -1,0 +1,23 @@
+{
+    "title": "Ben bir Frontend Geliştiricisiyim...",
+    "titleP": "...mükemmel kullanıcı deneyimlerine sahip, sağlam ve ölçeklenebilir ön uç ürünleri oluşturmayı seven.",
+    "skills": "Beceriler",
+    "profile" : "Profil",
+    "basicInformation":"Temel Bilgiler",
+    "birthDate":"Doğum tarihi",
+    "currentAddress":"İkamet Şehri",
+    "educational":"Eğitim ",
+    "status":"Durumu",
+    "preferredRole":"Tercih Ettiği Rol",
+    "aboutMe":"Benim Hakkımda",
+    "aboutMeP1":"Müşterinin kendisi, müşterinin şirketin adipisliğini takip edebilecektir. Gelsin ya da olmasın, emeğin yumuşaklığı dışında her türlü zevkinden nefret eder.",
+    "aboutMeP2":"En az şarjı keyifle açalım mı? Arkalarında bıraktıkları sözler o kadar harika ki!",
+    "projects":"Projeler",
+    "projectsP":" Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal kurulumlu bir çerez eklentisi. Bu, vanilya JS, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur ve git deposu, kod ve temalarda her türlü özelleştirmeyi mümkün kılar.",
+    "viewSite":" Siteye Git",
+    "journey":" Seyahat",
+    "sendMe":"Bana mesaj gönder!",
+    "sendMeP":"Bir sorunuz veya öneriniz mi var, yoksa sadece merhaba mı demek istiyorsunuz? Devam etmek."
+
+
+}

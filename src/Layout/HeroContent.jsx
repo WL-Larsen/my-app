@@ -1,15 +1,18 @@
 import React from 'react';
 import { IoLogoGithub } from "react-icons/io5";
 import { FaLinkedinIn } from "react-icons/fa";
+import { useTranslate } from '../TranslationProvider';
 
 
 
 function HeroContent() {
+  const {response} = useTranslate();
+  
   return (
     <section className='flex relative  w-[955px] h-[375.89px] justify-between top-[76px] left-[152px] '>
       <div className ='relative grid w-[528.88px] h-[375.89px]  top-[46px]'>
-        <p className=' text-left tracking-normal font-int font-bold text-[54px] leading-[59px] text-fy w-[528.88px] h-[118px] '>I am a Frontend<br></br>Developer...</p>
-        <p className='text-white text-int text-2xl font-normal leading-7 tracking-normal text-left w-[528.88px] h-[58px]'>...who likes to craft solid and scalable frontend products with great user experiences.</p>
+        <p className=' text-left tracking-normal font-int font-bold text-[54px] leading-[59px] text-fy w-[528.88px] h-[118px] '>{response?.title}</p>
+        <p className='text-white text-int text-2xl font-normal leading-7 tracking-normal text-left w-[528.88px] h-[58px]'>{response.titleP}</p>
 
         <div className=' flex w-[278px] h-[52px] gap-[12px] '>
         <button className=' grid border-1 border-solid bg-white w-[127px] h-[52px] py-3 pr-5 pl-3 rounded-md gap-[10px] dark:bg-[#252128] border border-white'>

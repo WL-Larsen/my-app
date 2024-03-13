@@ -1,10 +1,12 @@
 import React from 'react'
+import { useTranslate } from '../TranslationProvider';
 
 function Skils() {
+  const {response} = useTranslate();
   return (
     <section className='dark:bg-[#2B2727]  py-6 lg:py-16 '>
       <div className='flex gap-8 md:gap-16 lg:gap-[8rem] justify-center'>
-        <p className='flex text-[#4832D3] font-bold dark:text-fy text-xl md:text-3xl md:leading-10 lg:text-5xl lg:leading-[58px]'>Skills</p>
+        <p className='flex text-[#4832D3] font-bold dark:text-fy text-xl md:text-3xl md:leading-10 lg:text-5xl lg:leading-[58px]'>{response?.skills}</p>
        
         <nav className='grid md:grid-cols-2 flex-col items-center justify-center gap-y-4  md:gap-y-8 md:gap-x-16  lg:gap-y-10 lg:gap-x-28 '>
           <ul className='flex gap-1 md:gap-3 lg:gap-4'>
