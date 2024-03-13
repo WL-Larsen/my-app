@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTranslate } from '../TranslationProvider';
+import '../assets/figma.jpg'
 
 function Skils() {
   const {response} = useTranslate();
@@ -16,7 +17,7 @@ function Skils() {
 
           <ul className='flex gap-1 md:gap-3 lg:gap-4'>
             <img className=' drop-shadow-lg w-[40px] md:w-[80px] lg:w-[120px] h-[40px] md:h-[80px] lg:h-[120px] rounded-md' src="public/assets/react.jpg" />
-            <a className="flex font-int text-[#777777]  font-medium items-center dark:text-white lg:text-2xl " href="/">REACT dsdsds</a>
+            <a className="flex font-int text-[#777777]  font-medium items-center dark:text-white lg:text-2xl " href="/">REACT</a>
           </ul>
 
           <ul className='flex gap-1 md:gap-3 lg:gap-4'>
@@ -35,8 +36,8 @@ function Skils() {
           </ul>
 
           <ul className='flex gap-1 md:gap-3 lg:gap-4'>
-            <img className='drop-shadow-lg w-[40px] md:w-[80px] lg:w-[120px] h-[40px] md:h-[80px] lg:h-[120px] rounded-md bg-[#764ABC]' src="public/assets/redux.jpg" />
-            <a className="flex font-int text-[#777777]  font-medium items-center dark:text-white lg:text-2xl " href="/">REDUX</a>
+            <img className='drop-shadow-lg w-[40px] md:w-[80px] lg:w-[120px] h-[40px] md:h-[80px] lg:h-[120px] rounded-md bg-[#764ABC]' src="../assets/figma.jpg" />
+            <a className="flex font-int text-[#777777]  font-medium items-center dark:text-white lg:text-2xl " href="/">FIGMA</a>
           </ul>
 
         </nav>

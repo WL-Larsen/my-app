@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import './toggle.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -38,14 +40,24 @@ function DarkMode() {
     }
   }, [toggled]);
 
+  
+
   const handleClick = ()=>{
-    setToggled(!toggled)
+    setToggled(!toggled);
+    toast.success('theme changed', {
+      position: "top-right",
+      autoClose: 1000,
+      theme: "colored",
+      });
   }
+
+  
+
   return (
     <div className="App flex gap-[10px]">
       <button
         className={`toggle-btn ${toggled ? "toggled" : ""} dark:bg-[#3A3A3A] top-[0px]`}
-        onClick={handleClick}
+        onClick={handleClick} 
       >
         <div className="thumb"></div>
         <div className="thumb2 bg-[#3A3A3A] opacity-0 dark:opacity-100 duration-500"></div>
@@ -53,7 +65,7 @@ function DarkMode() {
         <p className='text-mv font-int text-[15px] font-bold dark:text-white'>
         {toggled ? "DARK MODE" : "LIGT MODE"}
         </p>
-        
+        <ToastContainer/>
     </div>
     
   );
