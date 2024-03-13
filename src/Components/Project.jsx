@@ -8,7 +8,7 @@ function Project() {
        <div className='flex-col space-y-6 md:space-y-10 lg:space-y-12'>
             <h1 className='flex text-mv dark:text-fy font-bold text-xl md:text-4xl md:leading-10 lg:text-5xl lg:leading-[58px] '>{response?.projects}</h1>
             <div className='flex flex-col md:flex-row  bg-white dark:bg-[#2B2727] md:space-x-4 lg:space-x-12 drop-shadow-lg rounded-lg'>
-                <img className="flex rounded-md md:rounded-none md:rounded-s-md lg:rounded-s-lg w-[220px] md:w-[280px] lg:w-[360px] h-[220px] md:h-[260px] lg:h-[360px]" src="src/assets/projects_1.png" alt="" />
+                <img className="flex rounded-md md:rounded-none md:rounded-s-md lg:rounded-s-lg w-[220px] md:w-[280px] lg:w-[360px] h-[220px] md:h-[260px] lg:h-[360px]" src="public/assets/projects_1.jpg" alt="" />
                 <div className='flex-col pl-1 space-y-2 md:space-y-2 lg:space-y-6 pt-4 md:pt-2 lg:pt-10 md:pr-6 lg:pr-10'>
                     <h2 className='text-mv dark:text-[#C1BAED] font-bold text-base md:text-lg lg:text-3xl'>Workintech</h2>
                     <p className='text-[#383838] dark:text-white font-normal text-xs md:text-sm lg:text-base w-[220px] md:w-[320px] lg:w-[480px]'>{response?.projectsP}</p>
@@ -25,7 +25,7 @@ function Project() {
                 </div>
             </div>
             <div className='flex flex-col md:flex-row  bg-white dark:bg-[#2B2727] md:space-x-4 lg:space-x-12 drop-shadow-lg rounded-lg'>
-                <img className="flex rounded-md md:rounded-none md:rounded-s-md lg:rounded-s-lg w-[220px] md:w-[280px] lg:w-[360px] h-[220px] md:h-[280px] lg:h-[360px]" src="src/assets/projects-2.png" alt="" />
+                <img className="flex rounded-md md:rounded-none md:rounded-s-md lg:rounded-s-lg w-[220px] md:w-[280px] lg:w-[360px] h-[220px] md:h-[280px] lg:h-[360px]" src="public/assets/projects-2.jpg" alt="" />
                 <div className='flex-col pl-1 space-y-2 md:space-y-2 lg:space-y-6 pt-4 md:pt-2 lg:pt-10 md:pr-6 lg:pr-10'>
                     <h2 className='text-mv dark:text-[#C1BAED] font-bold text-base md:text-lg lg:text-3xl'>{response?.journey}</h2>
                     <p className='text-[#383838] dark:text-white font-normal text-xs md:text-sm lg:text-base w-[220px] md:w-[320px] lg:w-[480px]'>{response?.projectsP}</p>
