@@ -30,7 +30,7 @@ function HeroContent() {
         </button>
         </div>
       </div>
-      <img src="public/assets/hero.jpg" className='relative w-[350px] h-[375.89px] rounded-[18px] right-[30px] object-cover' />
+      <img src="../assets/hero.jpg" className='relative w-[350px] h-[375.89px] rounded-[18px] right-[30px] object-cover' />
     </section>
   )
 }

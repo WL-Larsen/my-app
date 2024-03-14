@@ -6,11 +6,11 @@ function Skills() {
 
   
   const skills = [
-    { name: 'JAVA SCRIPT', image: 'public/assets/java.jpg', link: '/' },
-    { name: 'REACT', image: 'public/assets/react.jpg', link: '/' },
-    { name: 'REDUX', image: 'public/assets/redux.jpg', link: '/' },
-    { name: 'NODE', image: 'public/assets/node.jpg', link: '/' },
-    { name: 'VS CODE', image: 'public/assets/vsCode.jpg', link: '/' },
+    { name: 'JAVA SCRIPT', image: '../assets/java.jpg', link: '/' },
+    { name: 'REACT', image: '../assets/react.jpg', link: '/' },
+    { name: 'REDUX', image: '../assets/redux.jpg', link: '/' },
+    { name: 'NODE', image: '../assets/node.jpg', link: '/' },
+    { name: 'VS CODE', image: '../assets/vsCode.jpg', link: '/' },
     { name: 'FIGMA', image: '../assets/figma.jpg', link: '/' }
   ];
 
@@ -22,7 +22,7 @@ function Skills() {
         </p>
        
         <nav className='grid md:grid-cols-2 flex-col items-center justify-center gap-y-4 md:gap-y-8 md:gap-x-16 lg:gap-y-10 lg:gap-x-28'>
-          {/* Map fonksiyonu ile becerileri listeleyen yapı */}
+          
           {skills.map((skill, index) => (
             <ul key={index} className='flex gap-1 md:gap-3 lg:gap-4'>
               <img className='drop-shadow-lg w-[40px] md:w-[80px] lg:w-[120px] h-[40px] md:h-[80px] lg:h-[120px] rounded-md' src={skill.image} alt={skill.name} />

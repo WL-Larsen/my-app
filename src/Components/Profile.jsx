@@ -25,7 +25,7 @@ function Profile() {
                         </div>
                     </div>  
                 </div>          
-                <img className="flex rounded-xl w-[220px] md:w-[240px] lg:w-[300px] h-[220px] md:h-[260px] lg:h-[300px] drop-shadow-lg" src="public/assets/profile.jpg" alt="" />
+                <img className="flex rounded-xl w-[220px] md:w-[240px] lg:w-[300px] h-[220px] md:h-[260px] lg:h-[300px] drop-shadow-lg" src="../assets/profile.jpg" alt="" />
                 <div className=' w-[220px] md:w-[260px] lg:w-[300px] h-[140px] md:h-[260px] lg:h-[300px] space-y-1 md:space-y-2 lg:space-y-4'>
                     <h2 className='text-white font-medium text-xs md:text-2xl lg:text-3xl'>{response?.aboutMe}</h2>
                     <p className='text-white font-normal text-xs md:text-sm lg:text-lg '>{response?.aboutMeP1} </p>

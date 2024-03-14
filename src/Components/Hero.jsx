@@ -11,12 +11,12 @@ function Hero() {
 
   return (
   
-    <main className='flex w-full h-[671px]'>
+    <main className='flex w-full '>
       <div className='flex flex-col  items-center bg-mv w-[70%] h-[671px] dark:bg-darkMv'>
-        <div className='flex justify-between relative w-[955px] h-[72px] top-[37px] left-[152px] space-x-4'> 
-          <p className='font-int font-bold text-[32px] leading-[72px] text-left  text-fy'>almila</p>
+        <div className='flex  relative w-[455px] md:w-[755px] lg:w-[955px] h-[72px] top-[37px] left-20 md:left-24 lg:left-[152px] space-x-36 md:space-x-[400px] lg:space-x-[540px]'> 
+          <p className=' flex items-center font-int font-bold text-xl md:text-2xl lg:text-3xl text-left  text-fy'>almila</p>
           <a onClick={toggleLanguage} className='flex  text-[#777777] hover:text-slate-100 
-          w-[338px] h-[18px] text-sm  font-bold' href="/"><p className='text-fy dark:text-[#BAB2E7]' onClick={() => c} >TÜRKÇE</p>'YE GEÇ</a>
+           text-xs md:text-xs lg:text-sm  font-bold' href="/"><p className='text-fy dark:text-[#BAB2E7]' >TÜRKÇE</p>'YE GEÇ</a>
         </div>
         <HeroContent />
       </div>
