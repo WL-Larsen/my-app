@@ -5,13 +5,13 @@ import Skills from "./Components/Skills";
 import Profile from "./Components/Profile";
 import Project from "./Components/Project";
 import Foter from "./Components/Footer";
-/* import Hero2 from "./Components/Hero2"; */
+import Hero2 from "./Components/Hero2";
 
 function App() {
   return (
     <>
       <Hero />
-      {/*  <Hero2 /> */}
+      <Hero2 />
       <Skills />
       <Profile />
       <Project />
