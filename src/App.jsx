@@ -10,7 +10,7 @@ import Hero2 from "./Components/Hero2";
 function App() {
   return (
     <>
-      <Hero />
+    {/*   <Hero /> */}
       <Hero2 />
       <Skills />
       <Profile />

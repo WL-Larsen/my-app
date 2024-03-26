@@ -10,8 +10,8 @@ function Hero() {
 
   return (
     <main className="flex bg-gradient-to-r from-mv from-50% to-fy  dark:bg-gradient-to-r dark:from-darkMv dark:from-50% dark:to-darkFy justify-center py-6 lg:py-16">
-      <div className="space-y-10">
-        <div className="flex gap-24 md:gap-80 lg:gap-[470px]">
+      <div className="space-y-8 md:space-y-10 lg:space-y-16">
+        <div className="flex gap-24 md:gap-80 lg:gap-[540px]">
           <h1 className="font-bold text-xl md:text-2xl lg:text-3xl text-fy">
             huseyin
           </h1>

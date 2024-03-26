@@ -8,13 +8,13 @@ function HeroContent2() {
 
   return (
     <section className="flex ">
-      <div className="flex">
-        <div className="">
-          <h2 className=" font-int font-bold text-fy text-5xl">
-            {response?.title}
+      <div className="flex md:space-x-16 lg:space-x-32">
+        <div className="flex flex-col space-y-6 lg:space-y-12 md:pt-4 lg:pt-16">
+          <h2 className=" font-int font-bold text-fy text-xl md:text-3xl lg:text-5xl leading-5">
+            {response?.title}<br/>{response?.title2}
           </h2>
-          <p className="text-white text-int  font-normal leading-7 tracking-normal text-2xl">
-            {response.titleP}
+          <p className="text-white text-int  font-normal leading-4 tracking-normal text-base md:text-xl lg:text-2xl">
+            {response.titleP}<br/>{response.titleP1}
           </p>
           <div className=" flex w-[278px] h-[52px] gap-[12px] ">
             <button className=" grid border-1 border-solid bg-white w-[127px] h-[52px] py-3 pr-5 pl-3 rounded-md gap-[10px] dark:bg-[#252128] border border-white">
@@ -36,7 +36,7 @@ function HeroContent2() {
             </button>
           </div>
         </div>
-        <img src="" alt="" />
+        <img src="public/assets/hero.jpg" alt="" className="w-0 md:w-60 lg:w-96  h-0 md:h-60 lg:h-96 rounded-[18px] object-cover " />
       </div>
     </section>
   );
