@@ -36,7 +36,7 @@ function HeroContent2() {
             </button>
           </div>
         </div>
-        <img src="public/assets/hero.jpg" alt="" className="w-0 md:w-60 lg:w-96  h-0 md:h-60 lg:h-96 rounded-[18px] object-cover " />
+        <img src="../assets/hero.jpg" alt="" className="w-0 md:w-60 lg:w-96  h-0 md:h-60 lg:h-96 rounded-[18px] object-cover " />
       </div>
     </section>
   );
