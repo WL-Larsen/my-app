@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslate } from "../TranslationProvider";
-import ProfileImg from "../assets/Profile.png";
+import ProfileImg from "../assets/profile.png";
 
 function Profile() {
   const { response } = useTranslate();
