@@ -13,7 +13,7 @@
   .toggle-btn .thumb {
     height: 15px;
     width: 16px;
-    background-color:#FFE86E;
+    background-color:#CBF281;
     border-radius: 99px;
     transform: translateX(0);
     transition: left 0.15s ease;
@@ -46,3 +46,4 @@
   top: 50%;
   transform: translateY(-50%);
 }
+

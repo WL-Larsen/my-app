@@ -1,51 +1,110 @@
-import React from 'react'
-import { useTranslate } from '../TranslationProvider';
+import React from "react";
+import { useTranslate } from "../TranslationProvider";
+import Slider from "react-slick";
 
 function Project() {
-    const {response} = useTranslate();
+  const { response } = useTranslate();
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+  };
+
   return (
-    <section className='flex justify-center bg-fy dark:bg-darkFy py-6 lg:py-16'>
-       <div className='flex-col space-y-6 md:space-y-10 lg:space-y-12'>
-            <h1 className='flex text-mv dark:text-fy font-bold text-xl md:text-4xl md:leading-10 lg:text-5xl lg:leading-[58px] '>{response?.projects}</h1>
-            <div className='flex flex-col md:flex-row  bg-white dark:bg-[#2B2727] md:space-x-4 lg:space-x-12 drop-shadow-lg rounded-lg'>
-                <img className="flex rounded-md md:rounded-none md:rounded-s-md lg:rounded-s-lg w-[220px] md:w-[280px] lg:w-[360px] h-[220px] md:h-[260px] lg:h-[360px]" src="../assets/projects_1.jpg" alt="" />
-                <div className='flex-col pl-1 space-y-2 md:space-y-2 lg:space-y-6 pt-4 md:pt-2 lg:pt-10 md:pr-6 lg:pr-10'>
-                    <h2 className='text-mv dark:text-[#C1BAED] font-bold text-base md:text-lg lg:text-3xl'>Workintech</h2>
-                    <p className='text-[#383838] dark:text-white font-normal text-xs md:text-sm lg:text-base w-[220px] md:w-[320px] lg:w-[480px]'>{response?.projectsP}</p>
-                    <div className='space-x-2 md:space-x-5'>
-                        <button className='text-white text-xs md:text-sm bg-mv dark:bg-Pbtn rounded-[23px] w-[48px] md:w-[68px] h-[21px] md:h-[31px] '>react</button>
-                        <button className='text-white text-xs md:text-sm bg-mv dark:bg-Pbtn rounded-[23px] w-[48px] md:w-[68px] h-[21px] md:h-[31px] '>redux</button>
-                        <button className='text-white text-xs md:text-sm bg-mv dark:bg-Pbtn rounded-[23px] w-[48px] md:w-[68px] h-[21px] md:h-[31px] '>vercel</button>
-                    </div>
-                    <div className='space-x-5'>
-                        <a className="tetx-[#120B39] dark:text-fy font-medium text-xs md:text-sm lg:text-[16px] underline" href="\">{response?.viewSite}</a>
-                        <a className="tetx-[#120B39] dark:text-fy font-medium text-xs md:text-sm lg:text-[16px] underline" href="\">Github</a>
-                    </div>
-                    
+    <section className="h-screen flex justify-center bg-fy dark:bg-darkFy py-6 lg:py-16">
+      <div className="max-w-[64rem] flex-col space-y-6 md:space-y-10 lg:space-y-12">
+        <h1 className="flex text-mv dark:text-fy font-bold text-xl md:text-4xl md:leading-10 lg:text-5xl lg:leading-[58px] ">
+          Projects
+        </h1>
+        <Slider {...settings}>
+          {/* Project 1 */}
+          <div className="flex flex-col md:flex-row bg-white dark:bg-[#2B2727] drop-shadow-lg rounded-lg max-w-[42rem] md:max-w-[64rem] max-h-[360px] md:max-h-[360px] items-center justify-start">
+            <div className="flex flex-col md:flex-row">
+              <img
+                className="w-[220px] md:w-[280px] lg:w-[360px] h-[220px] md:h-[260px] lg:h-[360px] rounded-md md:rounded-none lg:rounded-s-lg"
+                src="../assets/projects_1.jpg"
+                alt="Project 1"
+              />
+              <div className="flex flex-col justify-center p-12 space-y-4">
+                <h2 className="text-mv dark:text-[#C1BAED] font-bold text-lg md:text-2xl lg:text-3xl">
+                  Workintech
+                </h2>
+                <p className="text-[#383838] dark:text-white text-sm md:text-base lg:text-lg w-full">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Assumenda inventore molestiae officia aspernatur quos minima
+                  nobis quas quae officiis, vitae, quam aperiam quo fugiat sed
+                  totam, unde amet aliquam tempora?
+                </p>
+                <div className="space-x-3">
+                  <button className="bg-mv dark:bg-Pbtn text-white px-4 py-2 rounded-md">
+                    React
+                  </button>
+                  <button className="bg-mv dark:bg-Pbtn text-white px-4 py-2 rounded-md">
+                    Redux
+                  </button>
+                  <button className="bg-mv dark:bg-Pbtn text-white px-4 py-2 rounded-md">
+                    Vercel
+                  </button>
                 </div>
-            </div>
-            <div className='flex flex-col md:flex-row  bg-white dark:bg-[#2B2727] md:space-x-4 lg:space-x-12 drop-shadow-lg rounded-lg'>
-                <img className="flex rounded-md md:rounded-none md:rounded-s-md lg:rounded-s-lg w-[220px] md:w-[280px] lg:w-[360px] h-[220px] md:h-[280px] lg:h-[360px]" src="../assets/projects-2.jpg" alt="" />
-                <div className='flex-col pl-1 space-y-2 md:space-y-2 lg:space-y-6 pt-4 md:pt-2 lg:pt-10 md:pr-6 lg:pr-10'>
-                    <h2 className='text-mv dark:text-[#C1BAED] font-bold text-base md:text-lg lg:text-3xl'>{response?.journey}</h2>
-                    <p className='text-[#383838] dark:text-white font-normal text-xs md:text-sm lg:text-base w-[220px] md:w-[320px] lg:w-[480px]'>{response?.projectsP}</p>
-                    <div className='space-x-2 md:space-x-5'>
-                        <button className='text-white text-xs md:text-sm bg-mv dark:bg-Pbtn rounded-[23px] w-[48px] md:w-[68px] h-[21px] md:h-[31px] '>react</button>
-                        <button className='text-white text-xs md:text-sm bg-mv dark:bg-Pbtn rounded-[23px] w-[48px] md:w-[68px] h-[21px] md:h-[31px] '>redux</button>
-                        <button className='text-white text-xs md:text-sm bg-mv dark:bg-Pbtn rounded-[23px] w-[48px] md:w-[68px] h-[21px] md:h-[31px] '>vercel</button>
-                    </div>
-                    <div className='space-x-5'>
-                        <a className="tetx-[#120B39] dark:text-fy font-medium text-xs md:text-sm lg:text-[16px] underline" href="\">{response?.viewSite}</a>
-                        <a className="tetx-[#120B39] dark:text-fy font-medium text-xs md:text-sm lg:text-[16px] underline" href="\">Github</a>
-                    </div>
-                    
+                <div className="space-x-3">
+                  <a className="text-[#120B39] dark:text-fy underline" href="#">
+                    View Site
+                  </a>
+                  <a className="text-[#120B39] dark:text-fy underline" href="#">
+                    Github
+                  </a>
                 </div>
+              </div>
             </div>
-        </div>
+          </div>
+
+          {/* Project 2 */}
+          <div className="flex bg-white dark:bg-[#2B2727] drop-shadow-lg rounded-lg max-w-[32rem] md:max-w-[64rem] max-h-[200px] md:max-h-[360px]  items-center justify-start">
+            <div className="flex flex-col md:flex-row">
+              <img
+                className="w-[220px] md:w-[280px] lg:w-[360px] h-[220px] md:h-[280px] lg:h-[360px] rounded-md md:rounded-none lg:rounded-s-lg"
+                src="../assets/projects-2.jpg"
+                alt="Project 2"
+              />
+              <div className="flex flex-col justify-center p-12 space-y-4">
+                <h2 className="text-mv dark:text-[#C1BAED] font-bold text-lg md:text-2xl lg:text-3xl">
+                  Journey
+                </h2>
+                <p className="text-[#383838] dark:text-white text-sm md:text-base lg:text-lg w-full">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Magni voluptatibus possimus culpa ducimus. Recusandae dicta
+                  quae explicabo eum? Voluptatum amet quibusdam consequuntur
+                  unde pariatur nostrum. Illo vero inventore voluptates aut!
+                </p>
+                <div className="space-x-3">
+                  <button className="bg-mv dark:bg-Pbtn text-white px-4 py-2 rounded-md">
+                    React
+                  </button>
+                  <button className="bg-mv dark:bg-Pbtn text-white px-4 py-2 rounded-md">
+                    Redux
+                  </button>
+                  <button className="bg-mv dark:bg-Pbtn text-white px-4 py-2 rounded-md">
+                    Vercel
+                  </button>
+                </div>
+                <div className="space-x-3">
+                  <a className="text-[#120B39] dark:text-fy underline" href="#">
+                    View Site
+                  </a>
+                  <a className="text-[#120B39] dark:text-fy underline" href="#">
+                    Github
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Slider>
+      </div>
     </section>
-  )
+  );
 }
 
-
-
-export default Project
+export default Project;

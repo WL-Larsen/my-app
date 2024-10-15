@@ -2,46 +2,66 @@ import React from "react";
 import { IoLogoGithub } from "react-icons/io5";
 import { FaLinkedinIn } from "react-icons/fa";
 import { useTranslate } from "../TranslationProvider";
+import Heroimg from "../assets/Heroimg.png";
 
-function HeroContent() {
+function HeroContent2() {
   const { response } = useTranslate();
 
   return (
-    <section className="flex relative  w-[955px] h-[375.89px] justify-between top-[76px] left-[152px] ">
-      <div className="relative grid w-[528.88px] h-[375.89px]  top-[46px]">
-        <p className=" text-left tracking-normal font-int font-bold text-[54px] leading-[59px] text-fy w-[528.88px] h-[118px] ">
-          {response?.title}
-        </p>
-        <p className="text-white text-int text-2xl font-normal leading-7 tracking-normal text-left w-[528.88px] h-[58px]">
-          {response.titleP}
-        </p>
-
-        <div className=" flex w-[278px] h-[52px] gap-[12px] ">
-          <button className=" grid border-1 border-solid bg-white w-[127px] h-[52px] py-3 pr-5 pl-3 rounded-md gap-[10px] dark:bg-[#252128] border border-white">
-            <div className="flex gap-[10px] ">
-              <IoLogoGithub className=" text-btn  place-content-center w-[26px] h-[26.26px] dark:text-white" />
-              <p className="text-btn font-int text-lg leading-7 font-medium text-left tracking-normal  h-[26.26px] dark:text-white">
-                Github
-              </p>
-            </div>
-          </button>
-
-          <button className=" grid border-1 border-solid bg-white w-[127px] h-[52px] py-3 pr-5 pl-3 rounded-md gap-[10px] dark:bg-[#252128] border border-white">
-            <div className="flex gap-[10px]">
-              <FaLinkedinIn className=" text-btn  place-content-center w-[26px] h-[26.26px] dark:text-white " />
-              <p className="text-btn font-int text-lg leading-7 font-medium text-left tracking-normal  h-[26.26px] dark:text-white">
-                Linkedin
-              </p>
-            </div>
-          </button>
+    <section className="flex">
+      <div className="flex x-space">
+        <div className="flex flex-col space-y-6 lg:space-y-12 md:pt-4 lg:pt-16">
+          <h2 className=" font-int font-bold text-fy text-xl md:text-3xl lg:text-5xl leading-5">
+            {response?.title}
+            <br />
+            {response?.title2}
+          </h2>
+          <p className="text-white text-int  font-normal leading-4 tracking-normal text-base md:text-xl lg:text-2xl">
+            {response.titleP}
+            <br />
+            {response.titleP1}
+          </p>
+          <div className=" flex gap-3 justify-center md:justify-start flex-wrap">
+            <button
+              onClick={() =>
+                window.open("https://github.com/WL-Larsen", "_blank")
+              }
+              className="grid border-1 border-solid bg-white w-[127px] h-[52px] py-3 pr-5 pl-3 rounded-md gap-[10px] dark:bg-[#252128] border border-white"
+            >
+              <div className="flex gap-[10px] ">
+                <IoLogoGithub className=" text-btn  place-content-center w-[26px] h-[26.26px] dark:text-white" />
+                <p className="text-btn font-int text-lg leading-7 font-medium text-left tracking-normal  h-[26.26px] dark:text-white">
+                  Github
+                </p>
+              </div>
+            </button>
+            <button
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/h%C3%BCseyin-%C3%A7elebi-536b362ba/",
+                  "_blank"
+                )
+              }
+              className=" grid border-1 border-solid bg-white w-[127px] h-[52px] py-3 pr-5 pl-3 rounded-md gap-[10px] dark:bg-[#252128] border border-white"
+            >
+              <div className="flex gap-[10px]">
+                <FaLinkedinIn className=" text-btn  place-content-center w-[26px] h-[26.26px] dark:text-white " />
+                <p className="text-btn font-int text-lg leading-7 font-medium text-left tracking-normal  h-[26.26px] dark:text-white">
+                  Linkedin
+                </p>
+              </div>
+            </button>
+          </div>
         </div>
+        <img
+          CLAS
+          src={Heroimg}
+          alt=""
+          className="w-0 md:w-60 lg:w-96  h-0 md:h-60 lg:h-96 rounded-[18px] object-cover "
+        />
       </div>
-      <img
-        src="../assets/hero.jpg"
-        className="relative w-[350px] h-[375.89px] rounded-[18px] right-[30px] object-cover"
-      />
     </section>
   );
 }
 
-export default HeroContent;
+export default HeroContent2;
